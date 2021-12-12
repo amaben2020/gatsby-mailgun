@@ -1,0 +1,9 @@
+type Todo {
+  text: String!
+  complete: Boolean!
+}
+
+type Query {
+  # this means that the Todo array cant be null and its required
+  allTodos: [Todo!]!
+}
